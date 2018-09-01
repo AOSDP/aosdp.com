@@ -2,14 +2,16 @@
   "name": "aosdp.com",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitlab.com:AOSDP/aosdp.com.git",
+  "repository": "git@github.com:AOSDP/aosdp.com.git",
   "author": "makmm <duckifier@protonmail.ch>",
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^1.2.0",
     "parcel-bundler": "^1.9.7"
   },
   "dependencies": {
